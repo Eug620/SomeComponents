@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-10-27 15:17:07
+ * @LastEditTime : 2021-10-27 18:48:55
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/App.js
+ */
+import './App.css'
+import RouterConfig from './router'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <RouterConfig/>
+  )
 }
-
-export default App;
+export default App
