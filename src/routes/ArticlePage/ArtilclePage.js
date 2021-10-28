@@ -1,6 +1,16 @@
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-10-28 14:54:36
+ * @LastEditTime : 2021-10-28 14:56:16
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/routes/ArticlePage/ArtilclePage.js
+ */
 import React from "react";
-import Typed from 'react-typed';
-
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// react components for routing our app without refresh
+// import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -12,7 +22,7 @@ import GridItem from "components/Grid/GridItem.js";
 // import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
-import HeaderLinks from "common/Header/HeaderLinks.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -22,15 +32,10 @@ const useStyles = makeStyles(styles);
 export default function Home(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const textDescription = [
-    "This is the examples we've written live in the vee-validate ",
-    "vee-validate is a form validation library for Vue.js that ",
-    "Higher-order components are better suited for most of your cases."
-  ]
   return (
     <div>
       <Header
-        brand="Home"
+        brand="Eug"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -45,20 +50,18 @@ export default function Home(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>
-                    Material Kit React.
-                </h1>
+                <h1 className={classes.title}>Material Kit React.</h1>
                 <h3 className={classes.subtitle}>
-                  <Typed
-                    strings={textDescription}
-                    typeSpeed={40}
-                  />
+                  A Badass Material-UI Kit based on Material Design.
                 </h3>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+      </div>
       <Footer />
     </div>
   );

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RouterConfig from './router'
-
 ReactDOM.render(
   <RouterConfig/>,
   document.getElementById('root')
