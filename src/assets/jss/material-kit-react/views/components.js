@@ -1,3 +1,11 @@
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-10-27 17:33:01
+ * @LastEditTime : 2021-10-29 15:13:03
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/assets/jss/material-kit-react/views/components.js
+ */
 import { container } from "assets/jss/material-kit-react.js";
 
 const componentsStyle = {
@@ -15,6 +23,7 @@ const componentsStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
+    minHeight: "120px",
     margin: "10px 0 0",
   },
   main: {

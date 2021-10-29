@@ -1,10 +1,10 @@
 /* 
  * @Author       : Eug
  * @Date         : 2021-10-28 16:05:50
- * @LastEditTime : 2021-10-28 18:25:10
+ * @LastEditTime : 2021-10-29 15:05:01
  * @LastEditors  : Eug
  * @Descripttion : Descripttion
- * @FilePath     : /project/src/routes/Add/Add.js
+ * @FilePath     : /project/src/routes/CreateArticle/CreateArticle.js
  */
 import React from "react";
 
@@ -24,13 +24,13 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 // my components
 const useStyles = makeStyles(styles);
 
-export default function Add(props) {
+export default function CreateArticle(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
     <div>
       <Header
-        brand="Add"
+        brand="CreateArticle"
         rightLinks={<HeaderLinks />}
         fixed
         color="white"

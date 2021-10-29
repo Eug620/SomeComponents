@@ -1,7 +1,7 @@
 /* 
  * @Author       : Eug
  * @Date         : 2021-10-28 14:54:36
- * @LastEditTime : 2021-10-28 14:56:16
+ * @LastEditTime : 2021-10-29 15:04:22
  * @LastEditors  : Eug
  * @Descripttion : Descripttion
  * @FilePath     : /project/src/routes/ArticlePage/ArtilclePage.js
@@ -25,6 +25,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import useGetImg from "utils/useGetCurrentImg"
 
 // my components
 const useStyles = makeStyles(styles);
@@ -45,7 +46,7 @@ export default function Home(props) {
         }}
         {...rest}
       />
-      <Parallax image={"https://momentum.photos/img/9b77f624-ab13-4329-b644-38ffc6088983.jpg?momo_cache_bg_uuid=fbdcd8bc-b2a1-4c3a-ad75-8a88a7ec0017"}>
+      <Parallax image={useGetImg(props)}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

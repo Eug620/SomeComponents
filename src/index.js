@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RouterConfig from './router'
+import store from './store.js'
 ReactDOM.render(
-  <RouterConfig/>,
+  <RouterConfig store={store}/>,
   document.getElementById('root')
 );
 

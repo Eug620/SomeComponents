@@ -1,3 +1,11 @@
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-05-11 17:23:14
+ * @LastEditTime : 2021-10-29 15:04:45
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/routes/Components/Components.js
+ */
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -14,7 +22,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "common/Header/HeaderLinks.js";
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
@@ -29,6 +37,7 @@ import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import useGetImg from "utils/useGetCurrentImg"
 
 const useStyles = makeStyles(styles);
 
@@ -48,7 +57,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg").default}>
+      <Parallax image={useGetImg(props)}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

@@ -1,3 +1,11 @@
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-05-11 17:23:14
+ * @LastEditTime : 2021-10-29 15:05:16
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/routes/LandingPage/LandingPage.js
+ */
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -12,7 +20,7 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "common/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
@@ -21,6 +29,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import ProductSection from "./Sections/ProductSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import useGetImg from "utils/useGetCurrentImg"
 
 const dashboardRoutes = [];
 
@@ -43,7 +52,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg").default}>
+      <Parallax filter image={useGetImg(props)}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

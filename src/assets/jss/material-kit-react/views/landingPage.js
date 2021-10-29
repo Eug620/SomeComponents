@@ -1,3 +1,11 @@
+/* 
+ * @Author       : Eug
+ * @Date         : 2021-10-27 17:33:01
+ * @LastEditTime : 2021-10-29 15:13:57
+ * @LastEditors  : Eug
+ * @Descripttion : Descripttion
+ * @FilePath     : /project/src/assets/jss/material-kit-react/views/landingPage.js
+ */
 import { container, title } from "assets/jss/material-kit-react.js";
 
 const landingPageStyle = {
@@ -18,6 +26,7 @@ const landingPageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
+    minHeight: "120px",
     margin: "10px auto 0",
   },
   main: {

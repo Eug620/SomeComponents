@@ -1,7 +1,7 @@
 /* 
  * @Author       : Eug
  * @Date         : 2021-10-28 15:01:08
- * @LastEditTime : 2021-10-28 18:24:06
+ * @LastEditTime : 2021-10-29 11:24:55
  * @LastEditors  : Eug
  * @Descripttion : Descripttion
  * @FilePath     : /project/src/common/Header/HeaderLinks.js
@@ -87,7 +87,7 @@ export default function HeaderLinks(props) {
         <Button
           color="transparent"
           target="_blank"
-          onClick={() => useRouterLink('/Add')}
+          onClick={() => useRouterLink('/CreateArticle')}
           className={classes.navLink}
         >
           <Add/>

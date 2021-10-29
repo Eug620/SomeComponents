@@ -8,7 +8,7 @@ import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "common/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -20,8 +20,8 @@ import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
+import useGetImg from "utils/useGetCurrentImg"
 
-import image from "assets/img/bg7.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -44,7 +44,7 @@ export default function LoginPage(props) {
       <div
         className={classes.pageHeader}
         style={{
-          backgroundImage: "url(" + image + ")",
+          backgroundImage: "url(" + useGetImg(props) + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
         }}

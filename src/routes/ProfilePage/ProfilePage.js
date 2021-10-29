@@ -13,7 +13,7 @@ import Footer from "components/Footer/Footer.js";
 import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "common/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
@@ -31,6 +31,7 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
+import useGetImg from "utils/useGetCurrentImg"
 
 const useStyles = makeStyles(styles);
 
@@ -59,7 +60,7 @@ export default function ProfilePage(props) {
       <Parallax
         small
         filter
-        image={require("assets/img/profile-bg.jpg").default}
+        image={useGetImg(props)}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
