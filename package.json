@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "homepage": "https://eug620.github.io/SomeComponents/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
